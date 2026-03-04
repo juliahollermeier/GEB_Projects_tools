@@ -39,10 +39,12 @@ The **software setup** of the first prototype of the DaVinci surgery system is b
 
 The proposed tasks for this first session are:
 - Connect properly the Hardware setup
-- Save the `Endowrist_IMU` program to the Endo-module using PlatformIO. Take care about the proper IP address of Endo-module and PC corresponding to your group!.
+- Upload the `Endowrist_IMU` program to the Endo-module using PlatformIO. Take care about the proper IP address of Endo-module and PC corresponding to your group!.
+![ESP32](././Images/3D_Orientation/VScode_platformIO.png)
 - Run the `3D_Orientation.rdk` file in the roboDK program to visualize the UR5e robot arm and the Endowrist tool.
-![IMU](././Images/3D_Orientation/3D_Orientation_final.png)
-- Run the `Receive_data_RPY_IMU_world.py` python program and review the corresponding orientation obtained in the 3D object selectes in roboDK
+![rdk](././Images/3D_Orientation/3D_Orientation_final.png)
+- Run the `Receive_data_RPY_IMU_world.py` python program and review the corresponding orientation obtained in the 3D object selectes in roboDK. Take care about the proper Endo-module corresponding to your group!
+![python](././Images/3D_Orientation/VScode_python.png)
 
 - Is the orientation correct? why or why not?
 - Make the necessary corrections in the python code and verify the correct orientation in roboDK virtual environment.
