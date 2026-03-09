@@ -19,31 +19,33 @@ To work on this seminar you have to:
   git clone https://github.com/director_user_name/GEB_Projects_tools.git
   ````
 - In VScode, select `File/Open folder...` and choose the `GEB_Projects_tools` forked repository folder
+
+Now you are ready to work on Director's local repository project!
+
+## **2. Syncronize the changes in your github**
+
 - First time you will have to add credential information from your github account
   ````bash
   git config --global user.email "mail@alumnes.ub.edu" 
   git config --global user.name "your github username"
   ````
-Now you are ready to work on Director's local repository project!
-
-- To syncronize the changes in your github
-![sync](././Images/Setup/code_sync.png)
 
 Select “Source control” in left lateral menu bar:
   - Press Add to synchronize all the changes
   - Add a commit comment
   - Push the changes
+  ![sync](././Images/Setup/code_sync.png)
   - First time you will be asked to write your credentials to your github account
 
-- You can check the changes in your github repository before shutting-down your computer
+You can check the changes in your github repository before shutting-down your computer
 
-## **2. Review the needed tools**
+## **3. Review the needed tools**
 
-You will need to use a new tool to program the ESP32 microcontroller.:
+You will need to use a new tool to program the ESP32 microcontroller:
 - Visual Studio Code with extension "PlatformIO IDE" (PlatformIO)
 
 
-## **3. Create a NEW ESP32 Blink project**
+## **4. Create a NEW ESP32 Blink project**
 
 This project demonstrates how to create a new project. This project is to blink an LED using an ESP32 board programmed with PlatformIO and the Arduino framework inside Visual Studio Code.
 
