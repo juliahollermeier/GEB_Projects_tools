@@ -1,3 +1,5 @@
+Paula Martínez i Júlia Hollermeier
+
 # **GEB Projects tools setup**
 
 The objectives of this section are:
