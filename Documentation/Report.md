@@ -12,7 +12,28 @@ At the beginning of the session, we observed that when applying rotations, the o
 
 After creating a GitHub account and the Project repository in the Visual Studio Code, we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
 
-Moreover, in platformIO.ini, we added the "monitor_speed" option to set the serial monitor baud rate to 115200, and replaced the content of src/main.cpp with the following code:
+Moreover, in platformIO.ini, we added the "monitor_speed" option to set the serial monitor baud rate to 115200, and replaced the content of `src/main.cpp` with the following code:
+
+```cpp
+#include <Arduino.h>
+
+const int ledPin = 2; // GPIO2, sovint connectat a un LED integrat
+
+void setup() {
+  Serial.begin(115200); // Inicialitza el port sèrie
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);
+  Serial.println("Led switched ON");
+  delay(1000);
+
+  digitalWrite(ledPin, LOW);
+  Serial.println("Led switched OFF");
+  delay(1000);
+}
+```
 
 ### **Conclusions**
 
