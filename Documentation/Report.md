@@ -46,7 +46,11 @@ void loop() {
 ```
 
 ### **Conclusions**
+
 ![Captura Neelde](././Images/Setup/Captura_plane.png)
+
 *Figure 2: Visualization of the 3D orientation of the plane object in RoboDK.*
+
 ![Captura Neelde](././Images/Setup/Captura_needle.png)
+
 *Figure 3: Visualization of the 3D orientation of the surgical_needle object in RoboDK.*
