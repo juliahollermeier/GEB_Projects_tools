@@ -12,7 +12,15 @@ At the beginning of the session, we observed that when applying rotations, the o
 
 After creating a GitHub account and the Project repository in the Visual Studio Code, we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
 
-Moreover, in platformIO.ini, we added the "monitor_speed" option to set the serial monitor baud rate to 115200, and replaced the content of `src/main.cpp` with the following code:
+Then, in `platformIO.ini`, we added the "monitor_speed" option to set the serial monitor baud rate to 115200:
+
+[env:esp32dev]
+platform = espressif32
+board = esp32dev
+framework = arduino
+monitor_speed = 115200
+
+Moreover, we replaced the content of `src/main.cpp` with the following code:
 
 ```cpp
 #include <Arduino.h>
