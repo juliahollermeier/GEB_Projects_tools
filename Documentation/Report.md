@@ -11,7 +11,10 @@ At the beginning of the session, we observed that when applying rotations, the o
 ### **Corrections implemented**
 
 After creating a GitHub account and the Project repository in the Visual Studio Code, we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
+
 Moreover, in platformIO.ini, we added the "monitor_speed" option to set the serial monitor baud rate to 115200, and replaced the content of src/main.cpp with the following code:
+
+### **Conclusions**
 
 ![Captura Neelde](././Images/Setup/Captura_needle.png)
 ![Captura Neelde](././Images/Setup/Captura_plane.png)
