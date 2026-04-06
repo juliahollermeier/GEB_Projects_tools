@@ -44,6 +44,9 @@ void loop() {
   delay(1000);
 }
 ```
+For this first example there is no need to add libraries. 
+
+AFter having modified the code we can upload it to the ESP32, byconnecting it to the computer via USB. 
 
 ### **Conclusions**
 
