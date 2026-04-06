@@ -52,7 +52,7 @@ deviceId = "G4_Endo"
 Next, we ran the `3D_Orientation.rdk` file in roboDK and executed the `Receive_data_RPY_IMU_world.py` script to visualize the corresponding orientation. Here, we also modified the target device:
 
  ```ini
-TARGET_DEVICE = "G4_Endo""
+TARGET_DEVICE = "G4_Endo"
 ```
 
 Then, to change the 3D object orientation to "surgical_needle", we modified:
