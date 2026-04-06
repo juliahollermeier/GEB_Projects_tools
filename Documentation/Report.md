@@ -48,7 +48,8 @@ For this first example there is no need to add libraries.
 After having modified the code we can upload it to the ESP32, by connecting it to the computer via USB. In PlatformIO we need to click the "Upload" button.    
 Once it is finished we may want to modify its name and code. We need to save it changing its name and then open the PlatformIO and select `open project`, we select the copy saved, afterwards select `src/main.cpp` and modify the code.     
 
-Now we proceed with the First Case Example called 3D orientation in space. The sensor used is called IMU. 
+Now we proceed with the First Case Example called 3D orientation in space. The sensor used is called IMU.    
+We started by connecting properly the Hardware setup. Afterwards we uploaded the `Endowrist_IMU` program using PlatformIO, We changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = G4_Endo`.
 
 
 ### **Conclusions**
