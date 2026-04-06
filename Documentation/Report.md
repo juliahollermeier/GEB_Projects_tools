@@ -6,7 +6,7 @@ The aim of this laboratory session was to gain familiarity with the GitHub platf
 
 ### **First operating performances diagnosis**
 
-At the beginning of the session, we observed that when applying rotations, the object did not behave as expected. This issue was caused because the axes were not aligned with the ESP32 reference frame, which led to incorrect orientation results. Therefore, a calibration process was required to properly align the axes and improve the system's performance, rotating the object until the axes mathced the ones seen on the screen.
+At the beginning of the session, we observed that when applying rotations, the object did not behave as expected. This issue ocurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
 
 ### **Corrections implemented**
 
@@ -48,11 +48,16 @@ For this first example there is no need to add libraries.
 After having modified the code we can upload it to the ESP32, by connecting it to the computer via USB. In PlatformIO we need to click the "Upload" button.    
 Once it is finished we may want to modify its name and code. We need to save it changing its name and then open the PlatformIO and select `open project`, we select the copy saved, afterwards select `src/main.cpp` and modify the code.     
 
-Now we proceed with the First Case Example called 3D orientation in space. The sensor used is called IMU.    
-We started by connecting properly the Hardware setup. Afterwards we uploaded the `Endowrist_IMU` program using PlatformIO, We changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = "G4_Endo"`.   
+Next, we proceeded with the case example *3D orientation in space* using an IMU sensor.
 
-Then we run the `3D_Orientation.rdk` file in the roboDK program to visualize the robot arm and the Endowrist tool. After we run the `Receive_data_RPY_IMU_world.py` python program and review the corresponding orientation, on this case we needed to modify again the Endo_module to the one corresponding to our group `TARGET_DEVICE = "G5_Endo"`.
-We were also asked to change the 3D object orientation to "surgical_needle", so we needed to change the python code line `object_NAME = "surgical_needle"`.   
+We started by connecting the hardware setup and uploaded the `Endowrist_IMU` program. We then changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = "G4_Endo"`.   
+
+Next, we run the `3D_Orientation.rdk` file in roboDK and executed the `Receive_data_RPY_IMU_world.py` to visualyize the corresponding orientation. In this case we needed to modify again the Endo_module to the one corresponding to our group `TARGET_DEVICE = "G5_Endo"`.
+
+Moreover, to change the 3D object orientation to "surgical_needle", we modified:
+ ```ini
+object_NAME = "surgical_needle"
+```
 Once the object is changed we can observe that the orientation is not correct, because the sensor and the model have its own local coordinate system. (FALTA INFO)
 
 
