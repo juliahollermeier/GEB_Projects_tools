@@ -66,12 +66,12 @@ Once the object was modified, we observed that when applying rotations, the it d
 
 <div align="center">
   <img src="./Images/Setup/Captura_plane.png" width="400"/>
-  <p><em>Figure 2: Visualization of the 3D orientation of the plane object in RoboDK.</em></p>
+  <p><em>Figure 1: Visualization of the 3D orientation of the plane object in RoboDK.</em></p>
 </div>
 
 <div align="center">
   <img src="./Images/Setup/Captura_needle.png" width="400"/>
-  <p><em>Figure 3: Visualization of the 3D orientation of the surgical_needle object in RoboDK.</em></p>
+  <p><em>Figure 2: Visualization of the 3D orientation of the surgical_needle object in RoboDK.</em></p>
 </div>
 
 ### **Conclusions**
