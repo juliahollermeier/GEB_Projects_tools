@@ -2,7 +2,7 @@ Paula Martínez i Júlia Hollermeier
 
 # **Lab Session 1: GEB Projects tools**
 
-The objective of this laboratory session was to become familiar with the GitHub platform as well as with the setup and use of the ESP32 microcontroller, as well as to analyze and implement 3D orientation techniques. 
+The aim of this laboratory session was to gain familiarity with the GitHub platform, learn how to set up and use the ESP32 microcontroller, and explore the analysis and implementation of 3D orientation techniques.
 
 ### **First operating performances diagnosis**
 
