@@ -49,7 +49,9 @@ After having modified the code we can upload it to the ESP32, by connecting it t
 Once it is finished we may want to modify its name and code. We need to save it changing its name and then open the PlatformIO and select `open project`, we select the copy saved, afterwards select `src/main.cpp` and modify the code.     
 
 Now we proceed with the First Case Example called 3D orientation in space. The sensor used is called IMU.    
-We started by connecting properly the Hardware setup. Afterwards we uploaded the `Endowrist_IMU` program using PlatformIO, We changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = G4_Endo`.
+We started by connecting properly the Hardware setup. Afterwards we uploaded the `Endowrist_IMU` program using PlatformIO, We changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = "G4_Endo"`.   
+
+Then we run the `3D_Orientation.rdk` file in the roboDK program to visualize the robot arm and the Endowrist tool. After we run the `Receive_data_RPY_IMU_world.py` python program and review the corresponding orientation, on this case we needed to modify again the Endo_module to the one corresponding to our group `TARGET_DEVICE = "G5_Endo"`.
 
 
 ### **Conclusions**
