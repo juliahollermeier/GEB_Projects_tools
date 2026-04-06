@@ -4,13 +4,9 @@ Paula Martínez i Júlia Hollermeier
 
 The aim of this laboratory session was to gain familiarity with the GitHub platform, learn how to set up and use the ESP32 microcontroller, and explore the analysis and implementation of 3D orientation techniques.
 
-### **First operating performances diagnosis**
+### Hardware and Software Setup**
 
-At the beginning of the session, we observed that when applying rotations, the object did not behave as expected. This issue ocurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
-
-### **Corrections implemented**
-
-After creating a GitHub account and the Project repository in the Visual Studio Code, we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
+First, we configured the working environment. We created a GitHub account and a project repository using Visual Studio Code, and we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
 
 Then, in `platformIO.ini`, we added the "monitor_speed" option to set the serial monitor baud rate to 115200:
  
@@ -22,7 +18,7 @@ framework = arduino
 monitor_speed = 115200
 ```
 
-Moreover, we replaced the content of `src/main.cpp` with the following code:
+Moreover, we replaced the content of `src/main.cpp` with a LED blinking program to verify that the ESP32 is working correctly:
 
 ```cpp
 #include <Arduino.h>
@@ -43,21 +39,33 @@ void loop() {
   Serial.println("Led switched OFF");
   delay(1000);
 }
-```
-For this first example there is no need to add libraries.    
-After having modified the code we can upload it to the ESP32, by connecting it to the computer via USB. In PlatformIO we need to click the "Upload" button.    
-Once it is finished we may want to modify its name and code. We need to save it changing its name and then open the PlatformIO and select `open project`, we select the copy saved, afterwards select `src/main.cpp` and modify the code.     
+```  
+After modifying the code, we uploaded it to the ESP32 by connecting it to the computer via USB and clicking the “Upload” button in PlatformIO. 
 
 Next, we proceeded with the case example *3D orientation in space* using an IMU sensor.
 
-We started by connecting the hardware setup and uploaded the `Endowrist_IMU` program. We then changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = "G4_Endo"`.   
+We started by connecting the hardware setup and uploaded the `Endowrist_IMU` program. We then We configured the IP addresses according to our group:
 
-Next, we run the `3D_Orientation.rdk` file in roboDK and executed the `Receive_data_RPY_IMU_world.py` to visualyize the corresponding orientation. In this case we needed to modify again the Endo_module to the one corresponding to our group `TARGET_DEVICE = "G5_Endo"`.
+ ```ini
+deviceId = "G4_Endo"
+```
 
-Moreover, to change the 3D object orientation to "surgical_needle", we modified:
+Next, we ran the `3D_Orientation.rdk` file in roboDK and executed the `Receive_data_RPY_IMU_world.py` script to visualyize the corresponding orientation. We also modified the target device:
+
+ ```ini
+TARGET_DEVICE = "G4_Endo""
+```
+
+### **First operating performances diagnosis**
+
+At the beginning, we observed that when applying rotations, the object did not behave as expected. This issue ocurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
+
+Then, to change the 3D object orientation to "surgical_needle", we modified:
+
  ```ini
 object_NAME = "surgical_needle"
 ```
+
 Once the object is changed we can observe that the orientation is not correct, because the sensor and the model have its own local coordinate system. (FALTA INFO)
 
 
