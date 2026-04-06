@@ -68,9 +68,6 @@ object_NAME = "surgical_needle"
 
 Once the object is changed we can observe that the orientation is not correct, because the sensor and the model have its own local coordinate system. (FALTA INFO)
 
-
-### **Conclusions**
-
 <div align="center">
   <img src="./Images/Setup/Captura_plane.png" width="400"/>
   <p><em>Figure 2: Visualization of the 3D orientation of the plane object in RoboDK.</em></p>
@@ -80,3 +77,7 @@ Once the object is changed we can observe that the orientation is not correct, b
   <img src="./Images/Setup/Captura_needle.png" width="400"/>
   <p><em>Figure 3: Visualization of the 3D orientation of the surgical_needle object in RoboDK.</em></p>
 </div>
+
+### **Conclusions**
+
+This laboratory session highlighted the importance of coordinate systems when working with 3D orientation. We observed that IMU data cannot be directly applied if the reference frames are not aligned, since different objects may have their own local coordinate systems. Therefore, a transformation is needed to align both systems and ensure that the orientation is displayed correctly.
