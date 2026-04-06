@@ -64,7 +64,7 @@ Then, to change the 3D object orientation to "surgical_needle", we modified:
 object_NAME = "surgical_needle"
 ```
 
-Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
+Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
 
 ## **Results**
 
