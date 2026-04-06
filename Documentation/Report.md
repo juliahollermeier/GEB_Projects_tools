@@ -5,6 +5,7 @@ Biomedical Engineering
 
 The aim of this laboratory session was to gain familiarity with the GitHub platform, learn how to set up and use the ESP32 microcontroller, and explore the analysis and implementation of 3D orientation techniques.
 
+## **Environment Setup**
 First, we configured the working environment. We created a GitHub account and a project repository using Visual Studio Code, and we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
 
 Then, in `platformIO.ini`, we added the "monitor_speed" option to set the serial monitor baud rate to 115200:
@@ -41,6 +42,8 @@ void loop() {
 ```  
 After modifying the code, we uploaded it to the ESP32 by connecting it to the computer via USB and clicking the “Upload” button in PlatformIO. 
 
+## **3D Orientation System Setup**
+
 Next, we proceeded with the case example *3D orientation in space* using an IMU sensor.
 
 We started by connecting the hardware setup and uploading the `Endowrist_IMU` program to the Endo-module using PlatformIO. We then configured the IP addresses according to our group:
@@ -63,6 +66,7 @@ object_NAME = "surgical_needle"
 
 Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
 
+## **Results**
 
 <div align="center">
   <img src="./Images/Setup/Captura_plane.png" width="400"/>
