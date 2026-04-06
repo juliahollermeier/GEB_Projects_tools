@@ -4,7 +4,7 @@ Paula Martínez i Júlia Hollermeier
 
 The aim of this laboratory session was to gain familiarity with the GitHub platform, learn how to set up and use the ESP32 microcontroller, and explore the analysis and implementation of 3D orientation techniques.
 
-### Hardware and Software Setup**
+### **Hardware and Software Setup**
 
 First, we configured the working environment. We created a GitHub account and a project repository using Visual Studio Code, and we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
 
