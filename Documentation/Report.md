@@ -43,7 +43,7 @@ After modifying the code, we uploaded it to the ESP32 by connecting it to the co
 
 Next, we proceeded with the case example *3D orientation in space* using an IMU sensor.
 
-We started by connecting the hardware setup and uploading the `Endowrist_IMU` program to the Endo-module using PlatformIO.We then configured the IP addresses according to our group:
+We started by connecting the hardware setup and uploading the `Endowrist_IMU` program to the Endo-module using PlatformIO. We then configured the IP addresses according to our group:
 
  ```ini
 deviceId = "G4_Endo"
