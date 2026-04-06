@@ -52,6 +52,8 @@ Now we proceed with the First Case Example called 3D orientation in space. The s
 We started by connecting properly the Hardware setup. Afterwards we uploaded the `Endowrist_IMU` program using PlatformIO, We changed the IP adress of the Endo-module and PC to the one corresponding to our group in this case `deviceId = "G4_Endo"`.   
 
 Then we run the `3D_Orientation.rdk` file in the roboDK program to visualize the robot arm and the Endowrist tool. After we run the `Receive_data_RPY_IMU_world.py` python program and review the corresponding orientation, on this case we needed to modify again the Endo_module to the one corresponding to our group `TARGET_DEVICE = "G5_Endo"`.
+We were also asked to change the 3D object orientation to "surgical_needle", so we needed to change the python code line `object_NAME = "surgical_needle"`.   
+Once the object is changed we can observe that the orientation is not correct, because the sensor and the model have its own local coordinate system. # (FALTA INFO)
 
 
 ### **Conclusions**
