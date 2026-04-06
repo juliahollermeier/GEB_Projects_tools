@@ -49,7 +49,7 @@ We started by connecting the hardware setup and uploading the `Endowrist_IMU` pr
 deviceId = "G4_Endo"
 ```
 
-Next, we ran the `3D_Orientation.rdk` file in roboDK and executed the `Receive_data_RPY_IMU_world.py` script to visualyize the corresponding orientation. Here, we also modified the target device:
+Next, we ran the `3D_Orientation.rdk` file in roboDK and executed the `Receive_data_RPY_IMU_world.py` script to visualize the corresponding orientation. Here, we also modified the target device:
 
  ```ini
 TARGET_DEVICE = "G4_Endo""
@@ -61,7 +61,7 @@ Then, to change the 3D object orientation to "surgical_needle", we modified:
 object_NAME = "surgical_needle"
 ```
 
-Once the object was modified, we observed that when applying rotations, the it did not behave as expected. This issue ocurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
+Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the axes of the 3D object were not aligned with the ESP32 reference frame, leading to incorrect orientation results. Therefore, a calibration process was required to align both coordinate systems.
 
 
 <div align="center">
