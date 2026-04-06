@@ -6,7 +6,7 @@ The aim of this laboratory session was to gain familiarity with the GitHub platf
 
 ### **First operating performances diagnosis**
 
-At the beginning of the session, we observed that when applying rotations, the object did not behave as expected. This issue was caused because the axes were not aligned with the ESP32 reference frame, which led to incorrect orientation results. Therefore, a calibration process was required to properly align the axes and improve the system's performance.
+At the beginning of the session, we observed that when applying rotations, the object did not behave as expected. This issue was caused because the axes were not aligned with the ESP32 reference frame, which led to incorrect orientation results. Therefore, a calibration process was required to properly align the axes and improve the system's performance, rotating the object until the axes mathced the ones seen on the screen.
 
 ### **Corrections implemented**
 
