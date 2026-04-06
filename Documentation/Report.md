@@ -1,5 +1,4 @@
-Paula Martínez i Júlia Hollermeier
-
+Paula Martínez i Júlia Hollermeier \n
 Biomedical Engineering
 
 # **Lab Session 1: GEB Projects tools**
