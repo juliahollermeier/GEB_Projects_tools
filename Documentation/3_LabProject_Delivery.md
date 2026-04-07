@@ -3,9 +3,10 @@ Biomedical Engineering
 
 # **Lab Session 1: GEB Projects tools**
 
+### **What we have done**
+
 The aim of this laboratory session was to gain familiarity with the GitHub platform, learn how to set up and use the ESP32 microcontroller, and explore the analysis and implementation of 3D orientation techniques.
 
-## **Environment Setup**
 First, we configured the working environment. We created a GitHub account and a project repository using Visual Studio Code, and we updated the code with our credential information (username and email) in order to synchronize it to our GitHub account.
 
 Then, in `platformIO.ini`, we added the "monitor_speed" option to set the serial monitor baud rate to 115200:
@@ -42,8 +43,6 @@ void loop() {
 ```  
 After modifying the code, we uploaded it to the ESP32 by connecting it to the computer via USB and clicking the “Upload” button in PlatformIO. 
 
-## **3D Orientation System Setup**
-
 Next, we proceeded with the case example *3D orientation in space* using an IMU sensor.
 
 We started by connecting the hardware setup and uploading the `Endowrist_IMU` program to the Endo-module using PlatformIO. We then configured the IP addresses according to our group:
@@ -64,8 +63,6 @@ Then, to change the 3D object orientation to "surgical_needle", we modified:
 object_NAME = "surgical_needle"
 ```
 
-Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
-
 ## **Results**
 
 <div align="center">
@@ -78,8 +75,12 @@ Once the object was modified, we observed that when applying rotations, it did n
   <p><em>Figure 2: Visualization of the 3D orientation of the surgical_needle object in RoboDK.</em></p>
 </div>
 
-### **Conclusions**
+### **2. Approach to the proposed questions**
+
+Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
+
+### **Final conclusions and future applications**
 
 This laboratory session highlighted the importance of coordinate systems when working with 3D orientation. We observed that IMU data cannot be directly applied if the reference frames are not aligned, since different objects may have their own local coordinate systems. Therefore, a transformation is needed to align both systems and ensure that the orientation is displayed correctly.   
 
-This seminar has proven highly beneficial for the upcoming development of our Final Degree Project (TFG) and the initial proposal (avant-projecte). Its core value lais in mastering GitHub as a collaborative platform, allowing all team members to track, modify, and review code in real time. Furthermore, gaining hands-on experience in sensor programming has provided us with the essential technical foundation required for the implementation of our project.
+This seminar has proven highly beneficial for the upcoming development of our Final Degree Project (TFG) and the initial proposal (avant-projecte). Its core value lies in mastering GitHub as a collaborative platform, allowing all team members to track, modify, and review code in real time. Furthermore, gaining hands-on experience in sensor programming has provided us with the essential technical foundation required for the implementation of our project.
