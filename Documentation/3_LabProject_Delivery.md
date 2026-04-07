@@ -3,7 +3,7 @@ Biomedical Engineering
 
 # **Lab Session 1: GEB Projects tools**
 
-### **What we have done**
+### **1. What we have done**
 
 The aim of this laboratory session was to gain familiarity with the GitHub platform, learn how to set up and use the ESP32 microcontroller, and explore the analysis and implementation of 3D orientation techniques.
 
@@ -63,7 +63,7 @@ Then, to change the 3D object orientation to "surgical_needle", we modified:
 object_NAME = "surgical_needle"
 ```
 
-## **Results**
+## **2. Results**
 
 <div align="center">
   <img src="./Images/Setup/Captura_plane.png" width="400"/>
@@ -75,11 +75,11 @@ object_NAME = "surgical_needle"
   <p><em>Figure 2: Visualization of the 3D orientation of the surgical_needle object in RoboDK.</em></p>
 </div>
 
-### **2. Approach to the proposed questions**
+### **3. Approach to the proposed questions**
 
 Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
 
-### **Final conclusions and future applications**
+### **4. Final conclusions and future applications**
 
 This laboratory session highlighted the importance of coordinate systems when working with 3D orientation. We observed that IMU data cannot be directly applied if the reference frames are not aligned, since different objects may have their own local coordinate systems. Therefore, a transformation is needed to align both systems and ensure that the orientation is displayed correctly.   
 
