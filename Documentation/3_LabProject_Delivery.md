@@ -67,7 +67,7 @@ object_NAME = "surgical_needle"
 
 Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
 
-## **3. Results**
+### **3. Results**
 
 <div align="center">
   <img src="./Images/Setup/Captura_plane.png" width="400"/>
