@@ -63,7 +63,11 @@ Then, to change the 3D object orientation to "surgical_needle", we modified:
 object_NAME = "surgical_needle"
 ```
 
-## **2. Results**
+### **2. Approach to the proposed questions**
+
+Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
+
+## **3. Results**
 
 <div align="center">
   <img src="./Images/Setup/Captura_plane.png" width="400"/>
@@ -74,10 +78,6 @@ object_NAME = "surgical_needle"
   <img src="./Images/Setup/Captura_needle.png" width="400"/>
   <p><em>Figure 2: Visualization of the 3D orientation of the surgical_needle object in RoboDK.</em></p>
 </div>
-
-### **3. Approach to the proposed questions**
-
-Once the object was modified, we observed that when applying rotations, it did not behave as expected. This issue occurred because the coordinate system of the IMU and the local coordinate system of the 3D object in RoboDK were not aligned, leading to incorrect orientation results. Therefore, we needed to physically align the IMU device with the axes of the computer reference frame.
 
 ### **4. Final conclusions and future applications**
 
